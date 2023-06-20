@@ -1,0 +1,27 @@
+.list-card{
+    display: inline-block;
+    width:20%;
+    min-width: 180px;
+    background-color: #FEFEFE;
+    border-radius: 15px;
+    margin: 15px;
+    
+    white-space: normal;
+}
+
+.title{
+    height: 60px;
+    word-wrap: break-word;
+}
+
+.button-open:hover {
+    color: var(--blue);
+}
+
+#close:hover {
+    color: var(--dark-red);
+}
+
+#open:hover {
+    color: var(--blue);
+}

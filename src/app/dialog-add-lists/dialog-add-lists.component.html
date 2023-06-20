@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row justify-content-around dialog">
+    <div class="col-8">
+      <h2 mat-dialog-title>Nuova lista</h2>
+    </div>
+    <div class="col-2 close-btn">
+      <button mat-icon-button type="button" id="close" (click)="close()">
+        <mat-icon class="mat-18">close</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="container-fluid text-center">
+    <div mat-dialog-content class="row">
+      <div class="col">
+        <form (submit)="save()" [formGroup]="listForm" class="">
+          <div class="row">
+
+            <div class="col-12">
+              <h2>Nome</h2>
+            </div>
+
+            <div class="col-12">
+              <input formControlName="name" minlength="4" maxlength="20" cdkFocusRegionStart required>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+
+    <div mat-dialog-actions class="row justify-content-around align-items-end">
+      <div class="col">
+        <button mat-button [disabled]="listForm.invalid" (click)="save()">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>

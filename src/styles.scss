@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.inner-div[hidden] {
+    visibility: hidden;
+    display: block !important;
+  }
+
+:root{
+  --light-blue:rgb(50,173,230);
+  --dark-red:rgb(215,0,21);
+  --cyan:rgb(100,210,255);
+  --blue:rgb(55, 110, 214);
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 40vh;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 87%);
+    border-radius: 10vw;
+    margin-block: .5em;
+    margin-inline: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#888;
+}
+
+

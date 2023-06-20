@@ -1,0 +1,15 @@
+<div class="container-fluid product text-center">
+    <div class="row align-items-middle justify-content-between">
+        <div class="number col-4 inner-div" [hidden]="!(product.amount > 1)">
+            {{product.amount}}
+        </div>
+         <div class="name col-4">
+            {{product.name}}
+         </div>
+         <div class="delete-button col-4">
+            <button mat-icon-button type="button" id="ColorHover" (click)="deleteProduct()">
+                <mat-icon class="mat-18">delete_forever</mat-icon>
+            </button>
+         </div>
+    </div>
+</div>

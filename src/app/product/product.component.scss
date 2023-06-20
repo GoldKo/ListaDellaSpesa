@@ -1,0 +1,52 @@
+.product{
+    background-color: #FEFEFE;
+    width: 85%;
+    height: 35px;
+    border: 1px solid #DDD;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.inner-div[hidden] {
+    visibility: hidden;
+    display: block !important;
+  }
+
+#ColorHover:hover {
+    color:var(--dark-red);
+}
+
+.number{
+    height: 24px;
+    max-width: 40px;
+    background: var(--blue);
+    color: #FEFEFE;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    display: flex; 
+    align-items: middle;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.name{
+    max-width: 80px;
+    font-size: 18px;
+    display: flex; 
+    align-self: middle;
+    justify-content: center; 
+    position: relative;
+    top: 6px;
+}
+
+.delete-button{
+    max-width: 40px;
+    display: flex; 
+    align-self: middle;
+    justify-content: center;
+    position: relative;
+    top:-8px;
+}

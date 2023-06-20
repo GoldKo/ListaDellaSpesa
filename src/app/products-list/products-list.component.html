@@ -1,0 +1,24 @@
+<div class="w-100">
+    <div id="body-list" class="container text-center">
+        <div class="row ">
+            <div class="col my-4">
+                 <h1 class="title bg-white">{{title}}</h1>
+            </div>
+        </div>
+        <div><app-product *ngFor="let product of list; index as i" [product]="list[i]"></app-product></div>
+    </div>
+    <div id="body-buttons" class="container text-center">
+        <div class="row justify-content-center align-items-middle">
+            <div class="col-6">
+                <button mat-raised-button (click)="deleteList()" class="buttons">
+                    <mat-icon id="remove-icon-display">delete</mat-icon>
+                </button>
+            </div>
+            <div class="col-6">
+                <button mat-raised-button  (click)="addList()" class="buttons">
+                    <mat-icon id="add-icon-display">add</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

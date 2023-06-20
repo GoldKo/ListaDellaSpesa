@@ -1,0 +1,30 @@
+<div class="container-fluid" *ngIf="!canLoadLists">
+    <div class="row my-5">
+        <div class="col">
+            <p>
+                Non sono presenti liste.<br>
+                Per crearne una,<br>
+                premere qui
+            </p>
+            <svg width="264" height="200" viewBox="0 0 244 310" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M140.833 1.33301C316.381 -8.84878 263.112 217.576 1 252" stroke="#7F7F7F" />
+            </svg>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col d-flex justify-content-center">
+            <button mat-raised-button (click)="openDialog()" id="addButton">
+                <mat-icon id="icon-display">add</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center" *ngIf="canLoadLists">
+    <div class="row-cols-auto my-2">
+        <app-list-card *ngFor="let list of lists; index as i" [index]="i" [title]="lists[i].name"></app-list-card>
+    </div>
+    <button mat-raised-button (click)="openDialog()" id="addButton">
+        <mat-icon id="icon-display" fontIcon="add"></mat-icon>
+    </button>
+</div>

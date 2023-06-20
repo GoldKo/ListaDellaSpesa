@@ -1,0 +1,64 @@
+<div class="container-fluid body">
+  <div class="row">
+    <div class="col">
+      <h2 mat-dialog-title>Nuovo prodotto</h2>
+    </div>
+    <div class="col-2 close-btn">
+      <button mat-icon-button type="button" id="close" (click)="close()">
+        <mat-icon class="mat-18">close</mat-icon>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="container-fluid text-center">
+    <form (submit)="save()" [formGroup]="productForm" class="">
+      <div mat-dialog-content class="row">
+        <div class="col">
+
+          <div class="row">
+
+            <div class="col-12">
+              <h2>Nome</h2>
+            </div>
+
+            <div class="col-12">
+              <input id="name" formControlName="name" cdkFocusRegionStart required>
+            </div>
+
+          </div>
+
+          <div class="row my-4">
+            <div class="col w-100">
+              <div>
+                <h2>Quantità</h2>
+              </div>
+              <div class="row my-row justify-content-center align-items-center">
+                <div class="col">
+                  <mat-icon class="mat-18 ico">exposure_minus_1</mat-icon>
+                  <button mat-icon-button type="button" (click)="incDecClick(false)">
+                    <mat-icon class="mat-18">chevron_left</mat-icon>
+                  </button>
+                </div>
+                <div class="col">
+                  <input id="number" type="number" maxlength="3" min="1" max="999" formControlName="amount" [(ngModel)]="amount">
+                </div>
+                <div class="col">
+                  <button mat-icon-button type="button" (click)="incDecClick(true)">
+                    <mat-icon class="mat-18">chevron_right</mat-icon>
+                  </button>
+                  <mat-icon class="mat-18 ico">plus_one</mat-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div mat-dialog-actions class="row justify-content-around align-items-end">
+        <div class="col">
+          <button mat-button type="submit" [disabled]="productForm.invalid" (click)="save()">Ok</button>
+        </div>
+      </div>
+    </form>
+  </div>

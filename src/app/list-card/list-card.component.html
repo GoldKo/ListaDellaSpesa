@@ -1,0 +1,13 @@
+<mat-card class="list-card">
+    <mat-card-header class="row">
+        <mat-card-title class="title">{{title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions class="row justify-content-around">
+        <button mat-flat-button id="button-open" id="open" (click)="openList()" class="col-2">
+            Apri
+        </button>
+        <button (click)="deleteList()" id="close" mat-icon-button class="col-10">
+            <mat-icon class="mat-18">delete</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>

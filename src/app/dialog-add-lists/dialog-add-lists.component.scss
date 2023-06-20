@@ -1,0 +1,29 @@
+.dialog{
+    overflow: hidden; 
+    margin-left: -40px;
+    
+}
+
+#close:hover {
+    color: var(--dark-red);
+}
+
+.close-btn{
+    margin-top:5px;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    width: 50px;
+}
+
+input{
+    text-align:center;
+    max-height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #A9A9A9;
+    border-radius: 15px;
+}

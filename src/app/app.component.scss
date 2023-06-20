@@ -1,0 +1,19 @@
+a {
+    border: none;
+    text-decoration: none;
+    text-shadow: #696969;
+    color: black;
+}
+
+#title {
+    color: var(--blue);
+
+}
+
+mat-toolbar{
+    background-color: #FFF;
+    border-bottom: 0.3px solid var(--blue);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,26 @@
+input{
+    max-width: 50px;
+    max-height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #A9A9A9;
+    border-radius: 15px;
+}
+
+.amountButton{
+    width: 120px;
+}
+
+*{
+    text-align: center;
+}
+#amount{
+    max-width: 200px;
+    height: 30px;
+}
+input[type=number] {
+    appearance: textfield;
+  }
+
+input::-webkit-inner-spin-button {
+    display: none;
+  }
